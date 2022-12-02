@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+span{
+    color: red;
+}
+
+.cal {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    grid-template-columns: 1fr;
+    transform: translate(-50%, 50%);
+    padding: 15px;
+    background: aquamarine;
+    border-radius: 50px;
+    box-shadow: rgb(72, 107, 145) 5px 30px 30px -15px;
+}
+
+input{
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+
+button{
+    color: black;
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid black;
+    background: aqua;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
