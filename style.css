@@ -3,38 +3,120 @@ body{
     padding: 0;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
+    /* background-color: black; */
+    /* background-image: url(./img/62384ba8e586ca76046a66ea_OAe3shvmb2avNPmhFIMArjjsde_hvxjWkraMpQDR2ivem6wUm6EqVKmPanZFQjk4ovoBhWFbQO3u_CcySrDK8LTOG5Fnk-bcsBISSf7Dj_U8Tf0IqR1CerEUqT7zwKne-lmANktw.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 span{
     color: red;
 }
 
+            /* LINES */
+.one{
+    height: 10rem;
+    background-color: #FF6608;
+    rotate: 120deg;
+    margin-left: -65rem;
+    box-shadow: #884721 5px 30px 30px -15px;
+
+}
+
+.two{
+    rotate: 120deg;
+    margin-left: -60rem;
+    height: 3rem;
+    background-color: #884721;
+    box-shadow: #884721 5px 20px 30px -15px;
+
+}
+
+.three{
+    height: 10rem;
+    width: 100%;
+    background-color: #FF6608;
+    rotate: -50deg;
+    margin-left: 48rem;
+    box-shadow: #884721 5px 30px 30px -15px;
+}
+
+.four{
+    height: 3rem;
+    width: 100%;
+    background-color: #884721;
+    rotate: -50deg;
+    margin-left: 35rem;
+    box-shadow: #884721 5px 30px 30px -15px;
+}
+
+h2{
+    color: #FF6608;
+    margin-top: -8.5rem;
+    margin-left: 33rem;
+    text-align: center;
+    font-size: 2.5rem;
+    width: 20rem;
+}
+
+
+                /* CALCULATOR */
 .cal {
+    width: 30rem;
     position: absolute;
-    top: 25%;
-    left: 50%;
-    grid-template-columns: 1fr;
+    top: 5%;
+    left: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     transform: translate(-50%, 50%);
-    padding: 15px;
-    background: aquamarine;
+    padding: 2rem 0rem;
     border-radius: 50px;
-    box-shadow: rgb(72, 107, 145) 5px 30px 30px -15px;
+    border:  2px solid #FF6608;
+    border-bottom: 4px solid #FF6608;
+    border-right: 3.5px solid #FF6608;
+    box-shadow: #884721 5px 30px 30px -15px;
+    /* background-color: #884721; */
+}
+
+p{
+    font-size: 1.5rem;
+    color: #884721;
 }
 
 input{
     outline: none;
     border: none;
+    border-bottom: 2px solid #FF6608;
     padding: 5px;
+    align-items: center;
+    font-size: 1.3rem;
+    color: #884721;
+    text-decoration: none;
+    text-align: center;
 }
 
 button{
-    color: black;
-    padding: 10px;
+    color: white;
+    padding: 1rem 3rem;
     border-radius: 50px;
-    border: 2px solid black;
-    background: aqua;
+    border: 2px solid #884721;
+    background: #884721;
     display: block;
     margin-top: 10px;
     cursor: pointer;
+    font-size: 1.3rem;
+}
+
+
+.display{
+    overflow: hidden;
+    height: 43.79rem;
+}
+
+.output{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #FF6608;
 }
