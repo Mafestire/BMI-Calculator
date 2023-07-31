@@ -1,30 +1,27 @@
 body{
     margin: 0;
     padding: 0;
-    color: black;
     font-family: Arial, Helvetica, sans-serif;
-    /* background-color: black; */
-    /* background-image: url(./img/62384ba8e586ca76046a66ea_OAe3shvmb2avNPmhFIMArjjsde_hvxjWkraMpQDR2ivem6wUm6EqVKmPanZFQjk4ovoBhWFbQO3u_CcySrDK8LTOG5Fnk-bcsBISSf7Dj_U8Tf0IqR1CerEUqT7zwKne-lmANktw.png); */
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-span{
-    color: red;
+.cont{
+    overflow: hidden;
 }
 
             /* LINES */
+
 .one{
     height: 10rem;
     background-color: #FF6608;
-    rotate: 120deg;
+    rotate: 130deg;
     margin-left: -65rem;
     box-shadow: #884721 5px 30px 30px -15px;
 
 }
 
 .two{
-    rotate: 120deg;
+    rotate: 130deg;
     margin-left: -60rem;
     height: 3rem;
     background-color: #884721;
@@ -36,8 +33,8 @@ span{
     height: 10rem;
     width: 100%;
     background-color: #FF6608;
-    rotate: -50deg;
-    margin-left: 48rem;
+    rotate: -45deg;
+    margin-left: 33rem;
     box-shadow: #884721 5px 30px 30px -15px;
 }
 
@@ -45,39 +42,32 @@ span{
     height: 3rem;
     width: 100%;
     background-color: #884721;
-    rotate: -50deg;
-    margin-left: 35rem;
+    rotate: -45deg;
+    margin-left: 20rem;
     box-shadow: #884721 5px 30px 30px -15px;
 }
 
-h2{
-    color: #FF6608;
-    margin-top: -8.5rem;
-    margin-left: 33rem;
-    text-align: center;
-    font-size: 2.5rem;
-    width: 20rem;
-}
-
-
                 /* CALCULATOR */
+
+h2{
+color: #FF6608;
+margin-top: -6.5rem;
+text-align: center;
+font-size: 2.5rem;
+width: 25rem;
+}
 .cal {
     width: 30rem;
-    position: absolute;
-    top: 5%;
-    left: 48%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translate(-50%, 50%);
     padding: 2rem 0rem;
     border-radius: 50px;
     border:  2px solid #FF6608;
     border-bottom: 4px solid #FF6608;
     border-right: 3.5px solid #FF6608;
     box-shadow: #884721 5px 30px 30px -15px;
-    /* background-color: #884721; */
 }
 
 p{
@@ -111,12 +101,76 @@ button{
 
 
 .display{
-    overflow: hidden;
-    height: 43.79rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .output{
     margin-top: 1rem;
     font-size: 1.2rem;
     color: #FF6608;
+}
+
+@media (width < 450px) {
+    .cal{
+        width: 17rem;
+        padding-bottom: 0rem;
+    }
+    .display{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .one{
+        height: 1.5rem;
+        background-color: #FF6608;
+        rotate: 130deg;
+        margin-left: -13rem;
+        box-shadow: #884721 5px 30px 30px -15px;
+    }
+    
+    .two{
+        rotate: 130deg;
+        margin-left: -12rem;
+        height: 1.5rem;
+        background-color: #884721;
+        box-shadow: #884721 5px 20px 30px -15px;
+    
+    }
+    .three{
+        height: 1.5rem;
+        width: 100%;
+        background-color: #FF6608;
+        rotate: -50deg;
+        margin-left: 9rem;
+        box-shadow: #884721 5px 30px 30px -15px;
+    }
+    
+    .four{
+        height: 1.5rem;
+        width: 100%;
+        background-color: #884721;
+        rotate: -50deg;
+        margin-left: 6rem;
+        box-shadow: #884721 5px 30px 30px -15px;
+    }
+    input{
+        width: 12rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    button{
+        font-size: 1.1rem;
+        padding: .7rem 2rem;
+    }
+    h2{
+        margin-top: 1.5rem;
+        margin-left: 3rem;
+        font-size: 1.5rem;
+        width: 15rem;
+    }
 }

@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMI Calculator</title>
-    <link rel="stylesheet" href="./style.css">
- 
-</head>
-<body>
-    <div class="display">
-    <div class="one"></div>
-    <div class="two"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BMI Calculator</title>
+        <link rel="stylesheet" href="./style.css">
 
-    <div>
-    <h2>Calculate your Body Mass Index (BMI)</h2>
-    <div class="cal">
-        <p>Height in CM :        </p>
+    </head>
+    <body>
+        <div class="cont">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="display">
 
-            <input type="number" id="height"><br><span id="height_error"></span>
 
-        <p>Weight in KG :        </p>
+            <div>
+                <h2>Calculate your Body Mass Index (BMI)</h2>
+                <div class="cal">
+                    <p>Height in CM :
+                    </p>
 
-            <input type="number" id="weight"><br><span id="weight_error"></span>
+                    <input type="number" id="height"><br><span id="height_error"></span>
 
-        <button id="bnt">Calculate</button>
-        <div class="output" id="output"></div>
+                    <p>Weight in KG :
+                    </p>
+
+                    <input type="number" id="weight"><br><span id="weight_error"></span>
+
+                    <button id="bnt">Calculate</button>
+                    <div class="output" id="output"></div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="three"></div>
+        <div class="four"></div>
     </div>
-</div>
 
-    <div class="three"></div>
-    <div class="four"></div>
-</div>
-
-    <script src="./fun.js"></script>
-</body>
+        <script src="./fun.js"></script>
+    </body>
 </html>
